@@ -17,17 +17,22 @@ def draw_scatter_plot():
     np.random.seed(123)
     
     # utwórz x, y
-    # x = ...
-    # y = ...
+    x = np.arange(10)
+    y = np.random.rand(10)*10
     
-    # fig, ax = 
+    fig, ax = plt.subplots()
     
-    # ax.scatter( ... )
+    ax.scatter(x, y, color='blue', label='Random Points')
     
     # label dla x, y, title, legend
-    
+    ax.set_xlabel("oś X")
+    ax.set_ylabel("oś Y")
+    ax.set_title("Wykres punktowty")
+    ax.legend()
+
     # return rysunek
-    pass
+    return fig
+    # pass
 
 if __name__ == '__main__':
     fig = draw_scatter_plot()

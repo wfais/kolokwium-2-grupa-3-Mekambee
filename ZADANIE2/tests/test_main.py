@@ -1,5 +1,5 @@
 from ZADANIE2.main import Animal, LandAnimal, WaterAnimal, Amphibian
-
+import pytest #brakowalo tutaj
 def test_land_animal_sound():
     """Test sprawdza, czy LandAnimal zwraca poprawny dźwięk."""
     la = LandAnimal()
